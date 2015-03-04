@@ -8,6 +8,7 @@
 @font-face { font-family: "FiraSans-Bold"; src: url("font/FiraSans-Bold.woff") format("woff"); }
 @font-face { font-family: "FiraSansSC"; src: url("font/FiraSansSC-Regular.woff") format("woff"); }
 @font-face { font-family: "FiraSansSC-Bold"; src: url("font/FiraSansSC-Bold.woff") format("woff"); }
+@font-face { font-family: "Icon"; src: url("font/icon.woff") format("woff"); }
 ////////////////////////////////////////////
 //
 // Typography
@@ -40,7 +41,7 @@ $blue: #19325D;
 $orange: #F47C0B;
 $grey: #252D32;
 
-$purple: #333745;
+$purple: #384D63;
 $red: #EA2E49;
 ////////////////////////////////////////////
 //
@@ -73,4 +74,7 @@ $asset__list__color: $neutral__color--light;
 
 $counter--increment__color: $accent__color;
 
-$file__submission__bg: lighten($neutral__color, 75%);
+$folder__list__bg: lighten($neutral__color, 75%);
+$folder--primary__color: $neutral__color;
+$folder--child__color: $neutral__color;
+$nested__file__color: $neutral__color;

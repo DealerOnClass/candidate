@@ -2,6 +2,7 @@ body {
     color: $site__color;
     font-size: $small-font-size;
     line-height: $base-line-unit;
+    border-top: rhythm(.125) solid $neutral__color--uber--light;
     @include font(sans--regular);
     @include media(large) {
         font-size: $base-font-size;
@@ -36,6 +37,12 @@ strong, em {
 }
 p, ul, ol {
     @include margin-trailer(1);
+}
+ul, ol {
+    list-style-position: inside;
+    @include media(large) {
+        list-style-position: outside;
+    }
 }
 ul > ul {
     margin-bottom: 0;

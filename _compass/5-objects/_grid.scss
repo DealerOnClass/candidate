@@ -31,8 +31,8 @@
 }
 .grid {    
     @extend %grid--clear;
-    margin-right: rhythm(1)*-1;
-    margin-left: rhythm(1)*-1;    
+    margin-right: rhythm(.5)*-1;
+    margin-left: rhythm(.5)*-1;    
 }
 .grid--row {
     @extend .grid;
@@ -40,16 +40,23 @@
 }
 .col {
     @include box-sizing(border-box);
-    padding: 0 rhythm(1);
+    padding: 0 rhythm(.5);
     float:left;
+    width: 100%;
 }
 .col--3 {
     @extend .col;
     width: percentage(1/2);
 }
-.col--3--large {
+.col--3--medium {
     @extend .col;
     @include media(medium) {
+        width: percentage(1/2);
+    }
+}
+.col--3--large {
+    @extend .col;
+    @include media(large) {
         width: percentage(1/2);
     }
 }

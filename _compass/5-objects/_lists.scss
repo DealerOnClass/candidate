@@ -7,9 +7,13 @@
         position: relative;    
     }
     > li:before {
-        content: "\2022";
-        position: absolute;
-        left: rhythm(.5)*-1;
+            content: "\2022";
+            padding-right: rhythm(.25);
+        @include media(large) {
+            position: absolute;
+            left: rhythm(.5)*-1;
+            padding-right: 0;            
+        }
     }
 }
 .list--inline {
