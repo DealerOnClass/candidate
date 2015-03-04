@@ -32,10 +32,14 @@ h6, small,
     @include adjust-font-size-to($h6 * $base-font-size);
 }
 strong, em {
-    @include font(sans--bold);
+    font-weight: 700;
 }
 p, ul, ol {
     @include margin-trailer(1);
+}
+ul > ul {
+    margin-bottom: 0;
+    padding-left: rhythm(1);
 }
 a {
     color: $site__link__color;

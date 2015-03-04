@@ -5,6 +5,9 @@
 .heading {
 
 }
+.heading--group {
+    @include margin-trailer(2);
+}
 .heading--smallcap {
     @include font(small-cap);
 }
@@ -26,7 +29,7 @@
     }
 }
 .heading--round {
-    @include rhythm-margins(2);
+    @include rhythm-margins(1,2);
     text-align: center;
     position: relative;
     color: $heading--round__color;

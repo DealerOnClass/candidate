@@ -25,22 +25,23 @@ class: home
                 <a class="btn--primary" href="{{ "/doc/fix__dropdown.zip" | prepend: site.baseurl }}">Dropdown Bug</a>        
             </div>
         </section>
-        <div class="wrapper--large">
-            <h3 class="center [ heading--neutral heading--smallcap heading--leader ]">Do You</h3>
-            <h4 class="center [ heading--neutral heading--smallcap ]">Know Bootstrap?</h4>
-            <div class="grid--row">
+        <section class="wrapper--large">
+            <header class="heading--group">
+                <h3 class="center [ heading--neutral heading--smallcap heading--leader ]">Do You</h3>
+                <h4 class="center [ heading--neutral heading--smallcap ]">Know Bootstrap?</h4>
+            </header>
+            <article class="grid--row">
                 <section class="col--3--large">
                     <p class="delta [ heading--smallcap heading--round ]">
                         <span>yes</span>
                     </p>
-                    <h4 class="heading--primary">Boostrap Page</h4>
-                    <p>Use the basic bootstrap template via the link below to create a page according to the mockup provided with only bootstrap components(no custom CSS).</p>
-                    <a class="btn--primary" href="http://getbootstrap.com/getting-started/#template">Bootstrap Template</a>
+                    <h4 class="heading--primary">Custom Page</h4>
+                    <p>Download the basic bootstrap template via the link below and create a page according to the mockup provided with only bootstrap components(no custom CSS).</p>
+                    <a class="btn--primary" href="http://getbootstrap.com/getting-started/#template">Basic Template</a>
                     <a class="btn--primary" href="{{ "/img/bootstrap__custompage.jpg" | prepend: site.baseurl }}">Mockup</a>
                     <h4 class="heading--primary">Reviews Page</h4>
-                    <p>Use the basic bootstrap template via the link below to create a page according to the mockup provided with only bootstrap components(no custom CSS).</p>
-                    <a class="btn--primary" href="http://getbootstrap.com/getting-started/#template">Bootstrap Template</a>
-                    <a class="btn--primary" href="{{ "/img/bootstrap__custompage.jpg" | prepend: site.baseurl }}">Mockup</a>
+                    <p>Download the reviews template via the link below and using only CSS, style according to your liking.</p>
+                    <a class="btn--primary" href="http://getbootstrap.com/getting-started/#template">Reviews Template</a>
                 </section>
                 <section class="col--3--large">
                     <p class="delta [ heading--smallcap heading--round ]">
@@ -50,7 +51,32 @@ class: home
                     <p>We are often asked to redesign headers for our clients. We mock them up first and later convert them to HTML files. Using the "header" file and images downloaded via link below, please convert this jpg file to HTML using 1 external stylesheet.</p>
                     <a class="btn--primary" href="{{ "/doc/header__assets.zip" | prepend: site.baseurl }}">Header Assets</a>
                 </section>
+            </article>
+        </section>
+        <section class="wrapper">
+            <header class="heading--group">
+                <h3 class="center [ heading--neutral heading--smallcap heading--leader ]">Finished?</h3>
+            </header>
+            <div class="row">
+                <h4 class="heading--primary">File Submission</h4>
+                <ol>
+                    <li>Place the files in a .zip folder with the following naming scheme "dealeron_designer-firstName_lastName".</li>
+                    <li>Reply to the email you received from us.</li>
+                </ol>
+                <h4 class="heading--primary">Example Folder</h4>
+                <ul class="list--indent file__submission">
+                    <li>dealeron_designer-John_Doe</li>
+                    <ul>
+                        <li>Creative</li>
+                        <li>Fixit</li>
+                        <li>Bootstrap</li>
+                        <ul>
+                            <li>Custom Page</li>
+                            <li>Reviews Page</li>
+                        </ul>
+                    </ul>
+                </ul>
             </div>
-        </div>        
+        </section>
     </article>
 </main>
