@@ -13,18 +13,26 @@
 //
 // Grid
 //
-.wrapper {
+%wrapper--base {
     @extend %grid--clear;
     padding: 0 rhythm(1);
     margin: 0 auto;    
+}
+.wrapper {
+    @extend %wrapper--base;
     max-width: $screen--small;
+}
+.wrapper--large {
+    @extend %wrapper--base;
+    max-width: $screen--large;    
 }
 .row {
     @include margin-trailer(2);
 }
 .grid {    
     @extend %grid--clear;
-    margin: 0 rhythm(1)*-1;
+    margin-right: rhythm(1)*-1;
+    margin-left: rhythm(1)*-1;    
 }
 .grid--row {
     @extend .grid;
@@ -38,4 +46,10 @@
 .col--3 {
     @extend .col;
     width: percentage(1/2);
+}
+.col--3--large {
+    @extend .col;
+    @include media(medium) {
+        width: percentage(1/2);
+    }
 }

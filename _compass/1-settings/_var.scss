@@ -18,7 +18,7 @@ $base-line-height: $base-font-size * $base-line-unit;
 
 $small-font-size: 18px;
 
-$screen--large: 45em;
+$screen--large: 50em;
 $screen--medium: 36em;
 $screen--small: 30em;
 
@@ -60,6 +60,10 @@ $site__link__color: $accent__color;
 $site__link__color--hover: darken($site__link__color, 10%);
 
 $heading--primary__color: $accent__color;
+$heading--secondary__color: $accent__color;
+$heading--neutral__color: $neutral__color--uber--light;
+$heading--round__color: $neutral__color--uber--light;
+$heading--round__border: $neutral__color--uber--light;
 
 $btn--primary__bg: $accent__color;
 $btn--primary__bg--hover: darken($btn--primary__bg, 10%);
@@ -68,5 +72,3 @@ $btn--primary__color: white;
 $asset__list__color: $neutral__color--light;
 
 $counter--increment__color: $accent__color;
-
-$site__nav__color: $neutral__color--uber--light;

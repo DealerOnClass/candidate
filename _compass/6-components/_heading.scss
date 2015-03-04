@@ -12,3 +12,43 @@
     @extend .heading--smallcap;
     color: $heading--primary__color;
 }
+.heading--secondary {
+    @extend .heading--smallcap;
+    color: $heading--secondary__color;
+}
+.heading--neutral {
+    color: $heading--neutral__color;
+}
+.heading--leader {
+    &:before {
+        content: "\2014";
+        display: block;
+    }
+}
+.heading--round {
+    @include rhythm-margins(2);
+    text-align: center;
+    position: relative;
+    color: $heading--round__color;
+    text-indent: rhythm(.2);
+    &:after {
+        content: "";
+        display: block;
+        height: 4em;
+        width: 4em;
+        left: 50%;
+        top: 50%;
+        margin-left: -2em;
+        margin-top: -2em;
+        @include media(medium) {
+            margin-top: -2.05em;
+        }
+        position: absolute;
+        @include border-radius(rhythm(2));
+        border: rhythm(.075) solid $heading--round__border;
+    }
+    span {
+        z-index: 10;
+        position: relative;
+    }
+}

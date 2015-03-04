@@ -8,6 +8,9 @@
 .sub .hidden--sub {
     @extend .hidden;
 }
+.center {
+    text-align: center;
+}
 .counter--reset {
     counter-reset: section;
 }

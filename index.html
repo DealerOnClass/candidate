@@ -2,37 +2,55 @@
 layout: default
 class: home
 ---
-<main class="site__main counter--reset">
-    <article class="wrapper">
-        <section class="row">
-            <h4 class="heading--primary counter--increment">Creative</h4>
-            <p>We now offer banner design as a package for our dealers. We need a banner template designed which will be used for our Toyota dealers, for all of their models. Please design a banner using the attached RAV4 and the following information:</p>
-            <ul class="list--bulleted asset__list">
-                <li>NEW 2013 RAV4 4x4 LE</li>
-                <li>$0 Down</li>
-                <li>$259 Per Month</li>
-                <li>Disclaimer: Prices plus tax, title, freight, and $489 processing fee. Lease: 36 month, 12,000 mile per year. No security deposity.</li>
-                <li>Button: View Inventory</li>
-            </ul>
-            <a class="btn--primary" href="{{ "/img/banner__vehicle.png" | prepend: site.baseurl }}" target="_blank">Vehicle Image</a>
+<main class="site__main">
+    <article>
+        <section class="wrapper">
+            <div class="row">
+                <h4 class="heading--primary">Creative</h4>
+                <p>We now offer banner design as a package for our dealers. We need a banner template designed which will be used for our Toyota dealers, for all of their models. Please design a banner to the following pixel dimensions <strong>880x320</strong> using the attached RAV4 and the following information:</p>
+                <ul class="list--bulleted asset__list">
+                    <li>NEW 2013 RAV4 4x4 LE</li>
+                    <li>$0 Down</li>
+                    <li>$259 Per Month</li>
+                    <li>Disclaimer: Prices plus tax, title, freight, and $489 processing fee. Lease: 36 month, 12,000 mile per year. No security deposity.</li>
+                    <li>Button: View Inventory</li>
+                </ul>
+                <a class="btn--primary" href="{{ "/img/banner__vehicle.png" | prepend: site.baseurl }}" target="_blank">Vehicle Image</a>
+            </div>
         </section>
-        <h4>Know Bootstrap?</h4>
-        <p>Proceed to 2, otherwise skip and go to 3.</p>
-        <section class="row">
-            <h4 class="heading--primary counter--increment">Boostrap Page</h4>
-            <p>Use the basic bootstrap template via the link below to create a page according to the mockup provided with only bootstrap components(no custom CSS).</p>
-            <a class="btn--primary" href="http://getbootstrap.com/getting-started/#template">Bootstrap Template</a>
-            <a class="btn--primary" href="{{ "/img/bootstrap__custompage.jpg" | prepend: site.baseurl }}">Mockup</a>
+        <section class="wrapper">
+            <div class="row">
+                <h4 class="heading--primary">Fixit</h4>
+                <p>Fix the errors in each of the files below.</p>
+                <a class="btn--primary" href="{{ "/doc/fix__dropdown.zip" | prepend: site.baseurl }}">Dropdown Bug</a>        
+            </div>
         </section>
-        <section class="row">
-            <h4 class="heading--primary counter--increment">Header</h4>
-            <p>We are often asked to redesign headers for our clients. We mock them up first and later convert them to HTML files. Using the "header" file and images downloaded via link below, please convert this jpg file to HTML using 1 external stylesheet.</p>
-            <a class="btn--primary" href="{{ "/doc/header__assets.zip" | prepend: site.baseurl }}">Header Assets</a>
-        </section>
-        <section class="row">
-            <h4 class="heading--primary counter--increment">Fixit</h4>
-            <p>Fix the errors in each of the files below.</p>
-            <a class="btn--primary" href="{{ "/doc/fix__dropdown.zip" | prepend: site.baseurl }}">Dropdown Bug</a>        
-        </section>
+        <div class="wrapper--large">
+            <h3 class="center [ heading--neutral heading--smallcap heading--leader ]">Do You</h3>
+            <h4 class="center [ heading--neutral heading--smallcap ]">Know Bootstrap?</h4>
+            <div class="grid--row">
+                <section class="col--3--large">
+                    <p class="delta [ heading--smallcap heading--round ]">
+                        <span>yes</span>
+                    </p>
+                    <h4 class="heading--primary">Boostrap Page</h4>
+                    <p>Use the basic bootstrap template via the link below to create a page according to the mockup provided with only bootstrap components(no custom CSS).</p>
+                    <a class="btn--primary" href="http://getbootstrap.com/getting-started/#template">Bootstrap Template</a>
+                    <a class="btn--primary" href="{{ "/img/bootstrap__custompage.jpg" | prepend: site.baseurl }}">Mockup</a>
+                    <h4 class="heading--primary">Reviews Page</h4>
+                    <p>Use the basic bootstrap template via the link below to create a page according to the mockup provided with only bootstrap components(no custom CSS).</p>
+                    <a class="btn--primary" href="http://getbootstrap.com/getting-started/#template">Bootstrap Template</a>
+                    <a class="btn--primary" href="{{ "/img/bootstrap__custompage.jpg" | prepend: site.baseurl }}">Mockup</a>
+                </section>
+                <section class="col--3--large">
+                    <p class="delta [ heading--smallcap heading--round ]">
+                        <span>no</span>
+                    </p>
+                    <h4 class="heading--primary">Header</h4>
+                    <p>We are often asked to redesign headers for our clients. We mock them up first and later convert them to HTML files. Using the "header" file and images downloaded via link below, please convert this jpg file to HTML using 1 external stylesheet.</p>
+                    <a class="btn--primary" href="{{ "/doc/header__assets.zip" | prepend: site.baseurl }}">Header Assets</a>
+                </section>
+            </div>
+        </div>        
     </article>
 </main>
