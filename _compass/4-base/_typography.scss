@@ -3,7 +3,7 @@ body {
     font-size: $small-font-size;
     line-height: $base-line-unit;
     border-top: rhythm(.125) solid $neutral__color--uber--light;
-    @include font(sans--regular);
+    @include font(sans);
     @include media(large) {
         font-size: $base-font-size;
     }
