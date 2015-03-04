@@ -1,0 +1,19 @@
+////////////////////////////////////////////
+//
+// Lists
+//
+.list--bulleted {
+    > li {        
+        position: relative;    
+    }
+    > li:before {
+        content: "\2022";
+        position: absolute;
+        left: rhythm(.5)*-1;
+    }
+}
+.list--inline {
+    > li {
+        display: inline-block;
+    }
+}

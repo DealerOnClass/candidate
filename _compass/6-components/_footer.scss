@@ -1,0 +1,9 @@
+////////////////////////////////////////////
+//
+// Footer
+//
+.site__footer {
+    @include media(large) {
+        @include margin-trailer(4);
+    }
+}

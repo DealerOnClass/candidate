@@ -1,0 +1,14 @@
+////////////////////////////////////////////
+//
+// Heading
+//
+.heading {
+
+}
+.heading--smallcap {
+    @include font(small-cap);
+}
+.heading--primary {
+    @extend .heading--smallcap;
+    color: $heading--primary__color;
+}

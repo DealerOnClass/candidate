@@ -1,0 +1,41 @@
+////////////////////////////////////////////
+//
+// Clear
+//
+%grid--clear{
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+////////////////////////////////////////////
+//
+// Grid
+//
+.wrapper {
+    @extend %grid--clear;
+    padding: 0 rhythm(1);
+    margin: 0 auto;    
+    max-width: $screen--small;
+}
+.row {
+    @include margin-trailer(2);
+}
+.grid {    
+    @extend %grid--clear;
+    margin: 0 rhythm(1)*-1;
+}
+.grid--row {
+    @extend .grid;
+    @extend .row;
+}
+.col {
+    @include box-sizing(border-box);
+    padding: 0 rhythm(1);
+    float:left;
+}
+.col--3 {
+    @extend .col;
+    width: percentage(1/2);
+}

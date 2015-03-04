@@ -1,0 +1,72 @@
+////////////////////////////////////////////
+//
+// Font
+//
+@font-face { font-family: "FiraMono"; src: url("font/FiraMono-Regular.woff") format("woff"); }
+@font-face { font-family: "FiraMono-Bold"; src: url("font/FiraMono-Bold.woff") format("woff"); }
+@font-face { font-family: "FiraSans"; src: url("font/FiraSans-Regular.woff") format("woff"); }
+@font-face { font-family: "FiraSans-Bold"; src: url("font/FiraSans-Bold.woff") format("woff"); }
+@font-face { font-family: "FiraSansSC"; src: url("font/FiraSansSC-Regular.woff") format("woff"); }
+@font-face { font-family: "FiraSansSC-Bold"; src: url("font/FiraSansSC-Bold.woff") format("woff"); }
+////////////////////////////////////////////
+//
+// Typography
+//
+$base-font-size: 20px;
+$base-line-unit: 1.414;
+$base-line-height: $base-font-size * $base-line-unit;
+
+$small-font-size: 18px;
+
+$screen--large: 45em;
+$screen--medium: 36em;
+$screen--small: 30em;
+
+$rhythm-unit: "em";
+$round-to-nearest-half-line: true;
+
+// Augmented Fourth 1.414
+$h1: 3.998;
+$h2: 2.827;
+$h3: 1.999;
+$h4: 1.414;
+$h5: 1;
+$h6: .707;
+////////////////////////////////////////////
+//
+// Color Palette
+//
+$blue: #19325D;
+$orange: #F47C0B;
+$grey: #252D32;
+
+$purple: #333745;
+$red: #EA2E49;
+////////////////////////////////////////////
+//
+// Abstracted Palette
+//
+$primary__color: $purple;
+$accent__color: $red;
+$neutral__color: $grey;
+$neutral__color--light: lighten($neutral__color, 30%);
+$neutral__color--uber--light: lighten($neutral__color, 60%);
+////////////////////////////////////////////
+//
+// Color Usage
+//
+$site__color: $neutral__color;
+$site__link__color: $accent__color;
+$site__link__color--hover: darken($site__link__color, 10%);
+
+$heading--primary__color: $accent__color;
+
+$btn--primary__bg: $accent__color;
+$btn--primary__bg--hover: darken($btn--primary__bg, 10%);
+$btn--primary__color: white;
+
+$asset__list__color: $neutral__color--light;
+
+$counter--increment__color: $accent__color;
+
+$site__nav__color: $neutral__color--uber--light;

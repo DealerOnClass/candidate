@@ -1,0 +1,28 @@
+////////////////////////////////////////////
+//
+// Helper
+//
+.hidden {
+    display: none;
+}
+.sub .hidden--sub {
+    @extend .hidden;
+}
+.counter--reset {
+    counter-reset: section;
+}
+.counter--increment {
+    position: relative;
+    counter-increment: section;
+    &:before {
+        content: counters(section, ".") " ";
+        display: inline-block;
+        color: $counter--increment__color;
+        padding-right: rhythm(.3);
+        @include media(large) {
+            position: absolute;
+            left: rhythm(.6)*-1;
+            padding-right: 0;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+////////////////////////////////////////////
+//
+// Media Size
+//
+@mixin media($type) {
+    @if $type == large {
+        @media screen and (min-width: $screen--large) {
+            @content;
+        }
+    }
+    @else if $type == medium {
+        @media screen and (min-width: $screen--medium) {
+            @content;
+        }
+    }
+    @else if $type == small {
+        @media screen and (min-width: $screen--small) {
+            @content;
+        }
+    }    
+}
+
+////////////////////////////////////////////
+//
+// Font Family
+//
+@mixin font($font-family) {
+    @if $font-family == code {
+        font-family: "FiraMono", monospace;
+    }
+    @else if $font-family == code--bold {
+        font-family: "FiraMono-Bold", monospace;
+    }
+    @else if $font-family == sans {
+        font-family: "FiraSans", sans-serif;
+    }
+    @else if $font-family == sans--bold {
+        font-family: "FiraSans-Bold", sans-serif;
+    }
+    @else if $font-family == small-cap {
+        font-family: "FiraSansSC", sans-serif;
+        text-transform: lowercase;
+        letter-spacing: .1em;
+    }
+    @else if $font-family == small-cap--bold {
+        font-family: "FiraSansSC-Bold", sans-serif;
+        text-transform: lowercase;
+        letter-spacing: .1em;
+    }
+}
