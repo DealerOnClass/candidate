@@ -11,14 +11,15 @@
 .center {
     text-align: center;
 }
-.counter--reset {
+.counter__reset--section {
     counter-reset: section;
 }
-.counter--increment {
+.counter__reset--subsection {
+    counter-reset: subsection;
+}
+%increment {
     position: relative;
-    counter-increment: section;
     &:before {
-        content: counters(section, ".") " ";
         display: inline-block;
         color: $counter--increment__color;
         padding-right: rhythm(.3);
@@ -26,6 +27,26 @@
             position: absolute;
             left: rhythm(.6)*-1;
             padding-right: 0;
+        }
+    }
+}
+.counter--increment {
+    @extend %increment;
+    &:before {
+        counter-increment: section;
+        content: counters(section, ".") " ";
+        @include media(large) {
+            left: rhythm(.6)*-1;
+        }
+    }
+}
+.counter--subsection {
+    @extend %increment;    
+    &:before {
+        counter-increment: subsection;
+        content: counter(section) "." counter(subsection) " ";
+        @include media(large) {
+            left: rhythm(1.2)*-1;
         }
     }
 }
