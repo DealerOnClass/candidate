@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta name="description" content="DealerOn Candidate Tests Repo">
     <title>DealerOn Candidate Tests</title>
-    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="source/css/screen.css">
+    <style>
+    h4 + ul {
+        margin-top: 1.414em;
+    }
+    .list--primary a {
+        background-color: #AAB5C5;
+        color: #FFF;
+        padding: 0.3535em 0.707em;
+        -moz-border-radius: 0.3535em;
+        -webkit-border-radius: 0.3535em;
+        border-radius: 0.3535em;
+        -moz-transition: 0.25s, background-color, ease-in-out;
+        -o-transition: 0.25s, background-color, ease-in-out;
+        -webkit-transition: 0.25s, background-color, ease-in-out;
+        transition: 0.25s, background-color, ease-in-out;
+    }
+    .list--primary a:hover,
+    .list--primary a:active,
+    .list--primary a:focus {
+        background-color: #9CA3AE;
+    }
+    .list--primary .selected {
+        background-color: #2E79EA;
+    }
+    .wrapper--question h4, .wrapper--question h4:before {
+        color: #2E79EA;
+    }
+    .list--primary .selected:hover,
+    .list--primary .selected:active,
+    .list--primary .selected:focus,
+    .wrapper--question .btn--primary {
+        background-color: #2E79EA;
+    }
+    .wrapper--question .btn--primary:hover,
+    .wrapper--question .btn--primary:active,
+    .wrapper--question .btn--primary:focus {
+        background-color: #2A6CCF;
+    }
+    .tabContent.hide {
+        display: none;
+    }
+    </style>
+    <script type="text/javascript" src="source/js/tabs.js"></script>
 </head>
-<body class="home">
+
+<body class="home" onload="init()">
     <nav class="site__nav">
         <article class="wrapper">
             <header class="heading--group">
@@ -41,32 +86,27 @@
                     <a class="btn--primary" href="/candidate//doc/fix__dropdown.zip">Dropdown Bug</a>
                 </div>
             </section>
-            <section class="wrapper">
-                <header class="heading--group">
-                    <h3 class="center [ heading--neutral heading--smallcap heading--leader ]">Do You</h3>
-                    <h4 class="center [ heading--neutral heading--smallcap ]">Know Bootstrap?</h4>
-                </header>
+            <section class="wrapper wrapper--question">
+                <h4 class="heading--primary heading--question counter--increment">Do You Know Bootstrap</h4>
+                <ul id="tabs" class="list--inline list--primary">
+                    <li><a href="#bootstrap__yes">Yes</a>
+                    </li>
+                    <li><a href="#bootstrap__no">No</a>
+                    </li>
+                </ul>
             </section>
-            <section class="wrapper--large">
-                <article class="grid--row">
-                    <section class="col--3--medium">
-                        <p class="delta [ heading--smallcap heading--round ]">
-                            <span>yes</span>
-                        </p>
-                        <h4 class="heading--primary counter--increment">Custom Page</h4>
-                        <p>Download the basic bootstrap template via the link below and create an HTML page according to the mockup provided.</p>
-                        <a class="btn--primary" href="http://getbootstrap.com/getting-started/#template" target="_blank">Basic Template</a>
-                        <a class="btn--primary" href="/candidate//doc/bootstrap__custompage.zip">Mockup</a>
-                    </section>
-                    <section class="col--3--medium">
-                        <p class="delta [ heading--smallcap heading--round ]">
-                            <span>no</span>
-                        </p>
-                        <h4 class="heading--primary counter--decrement">Header</h4>
-                        <p>Please convert this jpg into an HTML page using 1 external stylesheet.</p>
-                        <a class="btn--primary" href="/candidate//doc/header__assets.zip">Header Assets</a>
-                    </section>
-                </article>
+            <section class="wrapper wrapper--question">
+                <section class="tabContent" id="bootstrap__yes">
+                    <h4 class="heading--primary">Custom Page</h4>
+                    <p>Download the basic bootstrap template via the link below and create an HTML page according to the mockup provided.</p>
+                    <a class="btn--primary" href="http://getbootstrap.com/getting-started/#template" target="_blank">Basic Template</a>
+                    <a class="btn--primary" href="/candidate//doc/bootstrap__custompage.zip">Mockup</a>
+                </section>
+                <section class="tabContent hide" id="bootstrap__no">
+                    <h4 class="heading--primary">Header</h4>
+                    <p>Please convert this jpg into an HTML page using 1 external stylesheet.</p>
+                    <a class="btn--primary" href="/candidate//doc/header__assets.zip">Header Assets</a>
+                </section>
             </section>
             <section class="wrapper">
                 <header class="heading--group">
@@ -133,6 +173,6 @@
             </p>
         </div>
     </footer>
-
 </body>
+
 </html>
