@@ -19,8 +19,8 @@ function init() {
         tabLinks[id].onfocus = function() {
             this.blur()
         };
-        if (i == 0) tabLinks[id].className = 'selected';
-        i++;
+        // if (i == 0) tabLinks[id].className = 'selected';
+        // i++;
     }
     var i = 0;
     for (var id in contentDivs) {
