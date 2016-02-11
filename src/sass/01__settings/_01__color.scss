@@ -1,0 +1,36 @@
+//
+//  Grayscale
+$white:             white;
+$black:             black;
+$gray__01:          mix($black,$white,10%);
+$gray__02:          mix($black,$white,20%);
+$gray__03:          mix($black,$white,30%);
+$gray__04:          mix($black,$white,40%);
+$gray__05:          mix($black,$white,50%);
+$gray__06:          mix($black,$white,60%);
+$gray__07:          mix($black,$white,70%);
+$gray__08:          mix($black,$white,80%);
+$gray__09:          mix($black,$white,90%);
+//
+//  http://flatuicolors.com/
+$teal:              #1abc9c;
+$green:             #2ecc71;
+$peter:             #3498db;
+$purple:            #9b59b6;
+$darkgrey:          #34495e;
+$yellow:            #f1c40f;
+$orange:            #e67e22;
+$red:               #e74c3c;
+$lightgrey:         #ecf0f1;
+$grey:              #95a5a6;
+//
+//  DealerOn
+$dealeron__blue:    #3662ad;
+$dealeron__orange:  #f36c0a;
+$dealeron__grey:    mix($dealeron__blue, $gray__08, 20%);
+//
+//  Palette
+$primary__color:    $dealeron__blue;
+$accent__color:     $dealeron__orange;
+$neutral__color:    $dealeron__grey;
+

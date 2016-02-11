@@ -1,0 +1,44 @@
+.go-left {
+    float: left !important;
+}
+
+.go-right {
+    float: right !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+@media (min-width: $tablet--min) {
+    .visible--tablet {
+        display: none;
+    }
+}
+
+@media (min-width: $mobile--min) {
+    .visible--mobile {
+        display: none;
+    }
+}
+
+@media (max-width: $tablet--max) {
+    .hidden--tablet {
+        display: none;
+    }
+}
+
+@media (max-width: $mobile--max) {
+    .hidden--mobile {
+        display: none;
+    }
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+
+    &.in {
+        opacity: 1;
+    }
+}

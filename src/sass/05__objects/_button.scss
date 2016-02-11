@@ -1,0 +1,29 @@
+//
+//  Units
+$btn__y: third($base__y);
+$btn__x: $base__x;
+
+$btn--cta__color:   $white;
+$btn--cta__bg:   $accent__color;
+//
+//  Base
+.btn {
+    display: inline-block;
+
+    box-sizing: border-box;
+    padding: $btn__y $btn__x;
+
+    border: 1px solid;
+    border-radius: rhythm(.25);
+    text-decoration: none;
+}
+
+.btn--cta {
+    color: $btn--cta__color;
+    background-color: $btn--cta__bg;
+
+    &:hover,
+    &:focus {
+        background-color: shade($btn--cta__bg, 10%);
+    }
+}

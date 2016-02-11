@@ -1,0 +1,74 @@
+@include ff-batch($avenir);
+@include ff-batch($icon);
+
+html {
+    font-size: $base__font-size;
+}
+body {
+    color: $neutral__color;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 500;
+    line-height: $base__line-height;
+}
+h1 {
+    font-size: $h1__font-size;
+}
+h2 {
+    font-size: $h2__font-size;
+}
+h3 {
+    font-size: $h3__font-size;
+}
+h4 {
+    font-size: $h4__font-size;
+}
+h5 {
+    font-size: $h5__font-size;
+}
+h6 {
+    font-size: $h6__font-size;
+}
+p, ul, ol {
+    margin-bottom: rhythm(1);
+}
+strong {
+    font-weight: 700;
+}
+
+.folder {
+    list-style: none;
+
+    &,
+    li,
+    ul {
+        position: relative;
+        padding-left: rhythm(.5);
+    }
+
+    > ul {
+        left: rhythm(.5);
+        margin-bottom: rhythm(.5);
+
+        &:first-child {
+            margin-top: rhythm(.5);
+        }
+    }
+
+    > li:first-child:before {
+        font-family: "outlined-iconset";
+        content: "\e021";
+        position: absolute;
+        left: rhythm(negative(.5));
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: rhythm(1);
+        left: rhythm(.3);
+        height: calc(100% - #{rhythm(1.5)});
+        width: rhythm(.5);
+        border-width: 0 0 1px 1px;
+        border-style: dashed;
+    }
+}

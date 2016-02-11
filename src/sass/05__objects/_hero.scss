@@ -1,0 +1,36 @@
+//
+//  Units
+$hero__y: $base__y;
+$hero__x: $base__x;
+
+$hero--header__color: $white;
+$hero--header__bg: $primary__color;
+
+$hero--footer__color: $white;
+$hero--footer__bg: $neutral__color;
+//
+//  Base
+.hero {
+    padding-top: $hero__y;
+    padding-bottom: $hero__y;
+
+    a {
+        color: inherit;
+    }
+}
+
+.hero--large {
+    padding-top: $hero__y * 2;
+    padding-bottom: $hero__y * 2;
+}
+
+.hero--header {
+    color: $hero--header__color;
+    background-color: $hero--header__bg;
+    margin-bottom: rhythm(3);
+}
+
+.hero--footer {
+    color: $hero--footer__color;
+    background-color: $hero--footer__bg;
+}
