@@ -1,0 +1,87 @@
+.directory-wrapper {
+    padding-left: $base__tab;
+
+    &:before {
+        display: block;
+        content: "//";
+        color: #999999;
+        margin-left: negative($base__tab);
+    }
+}
+
+.directory {
+    color: #999999;
+
+    .directory {
+        padding-left: rhythm(1);
+        margin-bottom: 0;
+    }
+}
+
+.directory__item {
+    position: relative;
+    padding-left: rhythm(1);
+
+    &:before {
+        position: absolute;
+        font-family: "outlined-iconset";
+        left: 0;
+    }
+}
+
+.directory__item--root {
+
+    &:before {
+        content: "\e021";
+    }
+}
+
+.directory__item--file {
+    left: rhythm(1);
+
+    &:before {
+        content: "\e04f";
+    }
+}
+
+.candidate--web {
+
+    .directory {
+        box-sizing: border-box;
+
+        > .directory__item > .comment:before {
+            left: rhythm(negative(2));
+        }
+
+        &:after {
+            display: block;
+            content: "//";
+            margin-left: rhythm(negative(2));
+            color: #999999;
+        }
+
+        > .directory > .directory:after {
+            display: none;
+        }
+
+        > .directory:after {
+            margin-left: rhythm(negative(3));
+            color: #999999;
+        }
+
+        > .directory > .directory:after {
+            margin-left: rhythm(negative(4));
+            color: #999999;
+        }
+
+        > .directory__item--file > .comment:before,
+        > .directory > .directory__item > .comment:before {
+            left: rhythm(negative(3));
+        }
+
+        > .directory > .directory__item--file > .comment:before,
+        > .directory > .directory > .directory__item > .comment:before {
+            left: rhythm(negative(4));
+        }
+    }
+}

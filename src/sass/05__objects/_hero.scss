@@ -2,10 +2,8 @@
 //  Units
 $hero__y: $base__y;
 $hero__x: $base__x;
-
 $hero--header__color: $white;
 $hero--header__bg: $primary__color;
-
 $hero--footer__color: $white;
 $hero--footer__bg: $neutral__color;
 //
@@ -25,9 +23,11 @@ $hero--footer__bg: $neutral__color;
 }
 
 .hero--header {
+    margin-bottom: rhythm(3);
+
     color: $hero--header__color;
     background-color: $hero--header__bg;
-    margin-bottom: rhythm(3);
+    position: relative;
 }
 
 .hero--footer {

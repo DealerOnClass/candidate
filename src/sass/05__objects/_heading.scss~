@@ -1,0 +1,22 @@
+.heading {
+
+}
+
+.heading--comments {
+    padding-left: $base__tab;
+
+    &:before,
+    &:after {
+        content: "//";
+    }
+
+    &:before {
+        position: absolute;
+        left: 0;
+    }
+
+    &:after {
+        display: block;
+        margin-left: negative($base__tab);
+    }
+}

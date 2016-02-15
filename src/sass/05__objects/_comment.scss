@@ -1,0 +1,12 @@
+.comment {
+
+    &:before {
+        color: #999999;
+        content: "//";
+        position: absolute;
+        left: 0;
+    }
+}
+
+
+

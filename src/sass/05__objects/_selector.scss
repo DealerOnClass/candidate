@@ -1,0 +1,47 @@
+.selector {
+    color: #f2777a;
+    &:after {
+        color: #99cccc;
+        content: " {";
+    }
+}
+
+.selector--psuedo {
+    &:before {
+        color: #f2777a;
+        content: "&";
+    }
+    &:after {
+        color: #cccccc;
+        content: ":";
+    }
+}
+
+.selector--submit {
+    &:before {
+        content: "submit";
+    }
+}
+
+.selector--attribute {
+    color: #99cc99;
+    &:before {
+        color: #cccccc;;
+        content: "[";
+    }
+}
+
+.selector--class {
+    &:before {
+        color: #cccccc;
+        content: ".";
+    }
+}
+
+.selector--id {
+    &:before {
+        color: #cccccc;
+        content: "#";
+    }
+}
+

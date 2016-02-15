@@ -1,0 +1,50 @@
+.code-block {
+    position: relative;
+    padding-left: $base__tab;
+    color: #99cccc;
+    margin-bottom: rhythm(1);
+
+    &:after {
+        display: block;
+        content: " }";
+        margin-left: negative($base__tab);
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.code-block__link-wrapper {
+
+    &:before {
+        color: #cc99cc;
+        content: "@assets ";
+    }
+}
+
+.code-block__link {
+    text-decoration: none;
+    color: #f99157;
+
+    &:before,
+    &:after {
+        color: #99cccc;
+    }
+
+    &:before {
+        content: "download(";
+    }
+
+    &:after {
+        content: ");";
+    }
+}
+
+.code-block__link__text {
+
+    &:before {
+        content: "$";
+    }
+}
+

@@ -1,0 +1,17 @@
+.heading {
+    box-sizing: border-box;
+}
+
+.heading--comment {
+    position: relative;
+
+    padding-left: $base__tab;
+    color: #999999;
+
+    &:before,
+    &:after {
+        content: '//';
+        display: block;
+        margin-left: negative($base__tab);
+    }
+}

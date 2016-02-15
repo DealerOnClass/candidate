@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="DealerOn Candidate Tests Repo">
+        <title>DealerOn Graphics Design Candidate</title>
+        <link rel="stylesheet" href="src/css/screen.css">
+    </head>
+
+    <body class="candidate--web">
+
+        <header class="candidate--web__header">
+            <a href="" class="logo-wrapper">
+                <object class="logo" data='src/img/logo.svg' type="image/svg+xml">
+                    <img class="logo" src="src/img/logo.svg" alt="">
+                </object>
+            </a>
+        </header>
+
+        <main class="candidate--web__main">
+
+            <div class="line-numbers">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38<br>39<br>40<br>41<br>42<br>43<br>44<br>45<br>46<br>47<br>48<br>49<br>50</div>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col col--sidebar">
+                        <h5 class="heading heading--comment"><span class="comment">0.) Greetings!</span></h5>
+                        <p>Dear Candidate,</p>
+                        <p>Thank you for your interest in DealerOn. You're on your way to joining the DealerOn Design team!</p>
+                        <!--<p>DealerOn believes that curiosity and creativity are the foundations on which successful, innovative designers are made. To complete the next step in the interview process we would like to evaluate your aptitude in these areas.</p>-->
+                        <p>Please follow the instructions on this page for completion and submission. Assets for each portion are accessible via the <span class="code-block__link"><span><span class="code-block__link__text">Link</span></span></span> below.</p>
+                        <p>We hope you will elect to complete our designer code test. We look forward to seeing what you can do!</p>
+                        <p>Thank you,<br>DealerOn Design Team</p>
+                    </div>
+
+                    <div class="col col--main">
+
+                        <h5 class="heading heading--comment"><span class="comment">1.) Vehicle Banner</span></h5>
+                        <h5 class="selector selector--class">banner</h5>
+                        <div class="code-block">
+                            <p>Design a vehicle banner within the following pixel dimensions: 880x320. Text and vehicle image in assets.</p>
+                            <span class="selector selector--psuedo"></span><span class="selector selector--submit"></span><p class="code-block">Submit a jpeg. Do NOT submit an HTML file.</p>
+                            <p class="code-block__link-wrapper"><a href="src/docs/banner__assets.zip" class="code-block__link"><span class="code-block__link__text">BannerAssets</span></a></p>
+                        </div>
+
+                        <h5 class="heading heading--comment"><span class="comment">2.) HTML Header</span></h5>
+                        <h5 class="selector selector--tag">header</h5>
+                        <div class="code-block">
+                            <p>Convert the image found within the header assets into a Responsive HTML page using 1 external stylesheet.</p>
+                            <span class="selector selector--psuedo"></span><span class="selector selector--submit"></span><p class="code-block">Submit an HTML page with stylesheet and images in appropriate directories. Do NOT use Bootstrap.</p>
+                            <p class="code-block__link-wrapper"><a href="src/docs/header__assets.zip" class="code-block__link"><span class="code-block__link__text">HeaderAssets</span></a></p>
+                        </div>
+
+                        <h5 class="heading heading--comment"><span class="comment">3.) BONUS: Bootstrap</span></h5>
+                        <h5 class="selector selector--attribute">bonus='bootstrap-page']</h5>
+                        <div class="code-block">
+                            <p>Create an HTML page according to the mockup provided via bonus assets link. Use ONLY the Bootstrap Framework. Additionally hide the image on mobile.</p>
+                            <span class="selector selector--psuedo"></span><span class="selector selector--submit"></span><p class="code-block">Submit an HTML page with stylesheet and images in appropriate directories.</p>
+                            <p class="code-block__link-wrapper"><a href="src/docs/bonus__assets.zip" class="code-block__link"><span class="code-block__link__text">BonusAssets</span></a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="col col--sidebar">
+
+                        <h5 class="heading heading--comment"><span class="comment">4.) Submission</span></h5>
+                        <h5 class="selector selector--id">HowToSubmit</h5>
+                        <div class="code-block">
+                            <p>Reply to the email you received from us with your files and resume in a .zip folder. See example below.</p>
+                        </div>
+
+                        <div class="directory-wrapper">
+                            <ul class="directory">
+                                <li class="directory__item directory__item--root"><span class="comment">firstName_lastName.zip</span></li>
+                                <ul class="directory">
+                                    <li class="directory__item directory__item--root"><span class="comment">Banner</span></li>
+                                    <li class="directory__item directory__item--file"><span class="comment">banner.jpg</span></li>
+                                </ul>
+                                <ul class="directory">
+                                    <li class="directory__item directory__item--root"><span class="comment">Header</span></li>
+                                    <ul class="directory">
+                                        <li class="directory__item directory__item--root"><span class="comment">css</span></li>
+                                        <li class="directory__item directory__item--root"><span class="comment">images</span></li>
+                                    </ul>
+                                    <li class="directory__item directory__item--file"><span class="comment">index.html</span></li>
+                                </ul>
+                                <ul class="directory">
+                                    <li class="directory__item directory__item--root"><span class="comment">Bonus</span></li>
+                                    <ul class="directory">
+                                        <li class="directory__item directory__item--root"><span class="comment">css</span></li>
+                                        <li class="directory__item directory__item--root"><span class="comment">fonts</span></li>
+                                        <li class="directory__item directory__item--root"><span class="comment">js</span></li>
+                                        <li class="directory__item directory__item--root"><span class="comment">images</span></li>
+                                    </ul>
+                                    <li class="directory__item directory__item--file"><span class="comment">index.html</span></li>
+                                </ul>
+                                <li class="directory__item directory__item--file"><span class="comment">Resume</span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <footer class="footer">
+
+            </footer>
+        </main>
+
+
+    </body>
+
+</html>
+

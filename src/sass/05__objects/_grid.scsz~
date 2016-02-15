@@ -7,7 +7,8 @@ $grid__x: $base__x;
 .grid__container {
     max-width: 30em;
     margin: 0 auto;
-    padding: 0 rhythm(1);
+    padding-right: rhythm(1);
+    padding-left: rhythm(1);
 
     @media (min-width: $tablet--min) {
         max-width: 50em;
@@ -15,7 +16,8 @@ $grid__x: $base__x;
 }
 
 .grid__row {
-    margin: 0 rhythm(negative(1));
+    margin-right: rhythm(negative(1));
+    margin-left: rhythm(negative(1));
 
     @include clearfix;
 }
@@ -38,41 +40,21 @@ $grid__x: $base__x;
     }
 }
 
-.candidate--web {
+.candidate--graphics {
 
     .container {
-        box-sizing: border-box;
         margin: 0 auto;
-        padding: 0 rhythm(1) 0 rhythm(1.5);
-        max-width: 90em;
-
-        @media (max-width: $desktop--max) {
-            max-width: 40em;
-        }
-    }
-
-    .row {
+        padding-right: rhythm(1);
+        padding-left: rhythm(1);
         display: flex;
-
-        margin: 0 rhythm(negative(1));
-
-        flex-direction: column;
-
-        @media (min-width: $desktop--min) {
-            flex-direction: row;
-        }
-    }
-
-    .col {
-        box-sizing: border-box;
-        padding: 0 rhythm(1);
-    }
-
-    .col--main {
-        flex: 1;
+        justify-content: space-between;
     }
 
     .col--sidebar {
-        flex: 0 0 30%;
+        flex-grow: 1;
+    }
+
+    .col--main {
+        flex-grow: 4;
     }
 }
