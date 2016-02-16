@@ -11,7 +11,7 @@ body {
     font-weight: 500;
     line-height: $base__line-height;
 
-    color: $neutral__color;
+    color: $dealeron__grey;
 }
 
 h1 {
@@ -43,6 +43,7 @@ strong {
 
 .candidate--graphics {
     font-family: 'WorkSans', sans-serif;
+
     background-image: url('../img/candidate--web__bg.jpg');
     background-size: contain;
 }

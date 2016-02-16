@@ -39,68 +39,92 @@ $grid__x: $base__x;
 }
 
 .candidate--graphics {
+
+    .wrapper {
+        max-width: 34em;
+        margin: 0 auto;
+    }
+
     .row {
-        display: flex;
-        flex-direction: column;
-
-        justify-content: space-between;
-
         @media (min-width: $desktop--min) {
+            display: flex;
+            flex-direction: column;
             flex-direction: row;
+
+            justify-content: space-between;
         }
     }
 
     .col {
-        box-sizing: border-box;
-        padding: rhythm(3) rhythm(2);
         position: relative;
+
+        box-sizing: border-box;
+
+        padding: rhythm(3) rhythm(1);
     }
 
     .col--greetings {
         z-index: 300;
-        padding-left: rhythm(3);
 
         color: $white;
         background-color: rgba(54, 98, 173, 0.9);
 
-        flex: 0 0 24em;
+        @media (min-width: $desktop--min) {
+            padding-left: 5%;
 
-        &:after {
-            position: absolute;
-            top: 0;
-            right: -6em;
+            flex: 0 0 24em;
 
-            width: 6em;
-            height: 100%;
+            &:after {
+                position: absolute;
+                top: 0;
+                right: -6em;
 
-            content: '';
+                width: 6em;
+                height: 100%;
 
-            background-color: rgba(54, 98, 173, 0.9);
-            clip-path: polygon(0 0, 0% 100%, 100% 0);
+                content: '';
+
+                background-color: rgba(54, 98, 173, 0.9);
+
+                clip-path: polygon(0 0, 0% 100%, 100% 0);
+            }
         }
-    }
-
-    .col--submission {
-        background-color: rgba(255, 255, 255, 0.85);
-
-        flex: 0 0 22em;
     }
 
     .col--main {
         background-color: rgba(255, 255, 255, 0.85);
-        padding-left: rhythm(6);
-        flex: auto;
-        clip-path: polygon(4em 0, 100% 0, 100% 100%, 0 100%);
 
-        .wrapper {
-            max-width: 40em;
-            margin: 0 auto;
+        @media (min-width: $desktop--min) {
+            display: flex;
+
+            padding-left: 10%;
+
+            flex: auto;
+            flex-flow: row wrap;
+            clip-path: polygon(4em 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+
+    .col--submission {
+        max-width: 34em;
+        margin: 0 auto;
+        padding-top: 0;
+
+        @media (max-width: $desktop--max) {
+            padding-bottom: rhythm(4);
+        }
+
+        @media (min-width: $desktop--min) {
+            padding-right: 0;
+        }
+
+        @media (min-width: $large--min) {
+            flex: 0 0 30%;
         }
     }
 }
 
 .candidate--web {
-
     .container {
         box-sizing: border-box;
         max-width: 90em;
