@@ -4,6 +4,7 @@ var gulp         = require('gulp'),
     browserSync  = require('browser-sync'),
     cssnano      = require('gulp-cssnano'),
     htmlmin      = require('gulp-htmlmin'),
+    inlineSource = require('gulp-inline-source'),
     plumber      = require('gulp-plumber'),
     sass         = require('gulp-sass'),
     reload       = browserSync.reload;
@@ -11,9 +12,11 @@ var gulp         = require('gulp'),
 //  HTML
 gulp.task('html', function() {
     gulp.src('./src/*.html')
+        .pipe(inlineSource())
         .pipe(htmlmin({
             collapseWhitespace: true,
-            minifyJS: true
+            minifyJS: true,
+            removeComments: true
         }))
         .pipe(gulp.dest('./'))
         .pipe(reload({

@@ -45,49 +45,49 @@ a:hover, a:focus {
 
 @font-face {
   font-family: "Avenir";
-  src: url("../fonts/AvenirHeavy-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirHeavy-webfont.woff") format("woff"), url("../fonts/AvenirHeavy-webfont.ttf") format("truetype"), url("../fonts/AvenirHeavy-webfont.svg#svgAvenirHeavy-webfont") format("svg");
+  src: url("/src/fonts/AvenirHeavy-webfont.eot?#iefix") format("embedded-opentype"), url("/src/fonts/AvenirHeavy-webfont.woff") format("woff"), url("/src/fonts/AvenirHeavy-webfont.ttf") format("truetype"), url("/src/fonts/AvenirHeavy-webfont.svg#svgAvenirHeavy-webfont") format("svg");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Avenir";
-  src: url("../fonts/avenirltstd-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirltstd-medium-webfont.woff") format("woff"), url("../fonts/avenirltstd-medium-webfont.ttf") format("truetype"), url("../fonts/avenirltstd-medium-webfont.svg#svgavenirltstd-medium-webfont") format("svg");
+  src: url("/src/fonts/avenirltstd-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/src/fonts/avenirltstd-medium-webfont.woff") format("woff"), url("/src/fonts/avenirltstd-medium-webfont.ttf") format("truetype"), url("/src/fonts/avenirltstd-medium-webfont.svg#svgavenirltstd-medium-webfont") format("svg");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: "Avenir";
-  src: url("../fonts/avenirltstd-roman-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/avenirltstd-roman-webfont.woff") format("woff"), url("../fonts/avenirltstd-roman-webfont.ttf") format("truetype"), url("../fonts/avenirltstd-roman-webfont.svg#svgavenirltstd-roman-webfont") format("svg");
+  src: url("/src/fonts/avenirltstd-roman-webfont.eot?#iefix") format("embedded-opentype"), url("/src/fonts/avenirltstd-roman-webfont.woff") format("woff"), url("/src/fonts/avenirltstd-roman-webfont.ttf") format("truetype"), url("/src/fonts/avenirltstd-roman-webfont.svg#svgavenirltstd-roman-webfont") format("svg");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: "WorkSans";
-  src: url("../fonts/WorkSans-Black.woff2") format("woff2"), url("../fonts/WorkSans-Black.woff") format("woff"), url("../fonts/WorkSans-Black.ttf") format("truetype");
+  src: url("/src/fonts/WorkSans-Black.woff2") format("woff2"), url("/src/fonts/WorkSans-Black.woff") format("woff"), url("/src/fonts/WorkSans-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: "WorkSans";
-  src: url("../fonts/WorkSans-Bold.woff2") format("woff2"), url("../fonts/WorkSans-Bold.woff") format("woff"), url("../fonts/WorkSans-Bold.ttf") format("truetype");
+  src: url("/src/fonts/WorkSans-Bold.woff2") format("woff2"), url("/src/fonts/WorkSans-Bold.woff") format("woff"), url("/src/fonts/WorkSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "WorkSans";
-  src: url("../fonts/WorkSans-Regular.woff2") format("woff2"), url("../fonts/WorkSans-Regular.woff") format("woff"), url("../fonts/WorkSans-Regular.ttf") format("truetype");
+  src: url("/src/fonts/WorkSans-Regular.woff2") format("woff2"), url("/src/fonts/WorkSans-Regular.woff") format("woff"), url("/src/fonts/WorkSans-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: "SourceCodePro";
-  src: url("../fonts/sourcecodepro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcecodepro-medium-webfont.woff2") format("woff2"), url("../fonts/sourcecodepro-medium-webfont.woff") format("woff"), url("../fonts/sourcecodepro-medium-webfont.ttf") format("truetype"), url("../fonts/sourcecodepro-medium-webfont.svg#svgsourcecodepro-medium-webfont") format("svg");
+  src: url("/src/fonts/sourcecodepro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/src/fonts/sourcecodepro-medium-webfont.woff2") format("woff2"), url("/src/fonts/sourcecodepro-medium-webfont.woff") format("woff"), url("/src/fonts/sourcecodepro-medium-webfont.ttf") format("truetype"), url("/src/fonts/sourcecodepro-medium-webfont.svg#svgsourcecodepro-medium-webfont") format("svg");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: "outlined-iconset";
-  src: url("../fonts/outlined-iconset.eot?#iefix") format("embedded-opentype"), url("../fonts/outlined-iconset.woff") format("woff"), url("../fonts/outlined-iconset.ttf") format("truetype"), url("../fonts/outlined-iconset.svg#svgoutlined-iconset") format("svg");
+  src: url("/src/fonts/outlined-iconset.eot?#iefix") format("embedded-opentype"), url("/src/fonts/outlined-iconset.woff") format("woff"), url("/src/fonts/outlined-iconset.ttf") format("truetype"), url("/src/fonts/outlined-iconset.svg#svgoutlined-iconset") format("svg");
   font-weight: 500;
   font-style: normal; }
 
@@ -130,7 +130,7 @@ strong {
   font-family: 'WorkSans', sans-serif; }
   @media (min-width: 992px) {
     .candidate--graphics {
-      background-image: url("../img/candidate--web__bg.jpg");
+      background-image: url("/src/img/candidate--web__bg.jpg");
       background-size: contain; } }
 
 .candidate--web {

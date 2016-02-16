@@ -3,7 +3,8 @@
 $raw__font-size:        18;
 //
 //  General Units
-$base__font-path:       "../fonts/";
+$base__font-path:       "/src/fonts/";
+//  $base__font-path:       "../fonts/";
 $base__font-ratio:      1.333;
 $base__font-size:       ( $raw__font-size / 16 ) * 100%;
 $base__font-unit:       1em;

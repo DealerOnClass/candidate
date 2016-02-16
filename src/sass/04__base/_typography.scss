@@ -45,7 +45,8 @@ strong {
     font-family: 'WorkSans', sans-serif;
 
     @media (min-width: $tablet--min) {
-        background-image: url('../img/candidate--web__bg.jpg');
+        background-image: url('/src/img/candidate--web__bg.jpg');
+        //  background-image: url('../img/candidate--web__bg.jpg');
         background-size: contain;
     }
 }
