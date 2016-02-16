@@ -44,8 +44,10 @@ strong {
 .candidate--graphics {
     font-family: 'WorkSans', sans-serif;
 
-    background-image: url('../img/candidate--web__bg.jpg');
-    background-size: contain;
+    @media (min-width: $tablet--min) {
+        background-image: url('../img/candidate--web__bg.jpg');
+        background-size: contain;
+    }
 }
 
 .candidate--web {

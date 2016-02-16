@@ -127,9 +127,11 @@ strong {
   font-weight: 700; }
 
 .candidate--graphics {
-  font-family: 'WorkSans', sans-serif;
-  background-image: url("../img/candidate--web__bg.jpg");
-  background-size: contain; }
+  font-family: 'WorkSans', sans-serif; }
+  @media (min-width: 992px) {
+    .candidate--graphics {
+      background-image: url("../img/candidate--web__bg.jpg");
+      background-size: contain; } }
 
 .candidate--web {
   font-family: 'SourceCodePro', sans-serif;
