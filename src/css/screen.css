@@ -382,9 +382,9 @@ strong {
       -webkit-flex: auto;
       -ms-flex: auto;
       flex: auto;
-      -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+      -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
       -webkit-clip-path: polygon(4em 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(4em 0, 100% 0, 100% 100%, 0 100%); } }
 
@@ -598,6 +598,15 @@ strong {
 
 .invisible {
   visibility: hidden; }
+
+.visible--large {
+  display: none; }
+
+@media (min-width: 1500px) {
+  .visible--large {
+    display: block; }
+  .hidden--large {
+    display: none; } }
 
 @media (max-width: 1199px) {
   .visible--desktop {

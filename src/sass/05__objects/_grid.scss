@@ -100,7 +100,7 @@ $grid__x: $base__x;
             padding-left: 10%;
 
             flex: auto;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
             clip-path: polygon(4em 0, 100% 0, 100% 100%, 0 100%);
         }
     }

@@ -10,6 +10,19 @@
     visibility: hidden;
 }
 
+.visible--large {
+    display: none;
+}
+
+@media (min-width: $large--min) {
+    .visible--large {
+        display: block;
+    }
+    .hidden--large {
+        display: none;
+    }
+}
+
 @media (max-width: $desktop--max) {
     .visible--desktop {
         display: none;
