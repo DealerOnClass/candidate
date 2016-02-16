@@ -130,7 +130,7 @@ strong {
   font-family: 'WorkSans', sans-serif; }
   @media (min-width: 992px) {
     .candidate--graphics {
-      background-image: url("/src/img/candidate--web__bg.jpg");
+      background-image: url("src/img/candidate--web__bg.jpg");
       background-size: contain; } }
 
 .candidate--web {
