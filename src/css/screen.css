@@ -228,8 +228,10 @@ strong {
   .code-block__link:after {
     content: ");"; }
 
-.code-block__link__text:before {
-  content: "$"; }
+.code-block__link__text {
+  color: #f99157; }
+  .code-block__link__text:before {
+    content: "$"; }
 
 .comment:before {
   color: #999999;
