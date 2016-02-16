@@ -1,6 +1,16 @@
-.heading {
-    box-sizing: border-box;
+.candidate--graphics {
+
+    .heading {
+        font-weight: 700;
+    }
+
+    .heading--feature {
+        color: $dealeron__blue;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
 }
+
 
 .heading--comment {
     position: relative;

@@ -1,16 +1,4 @@
-.directory-wrapper {
-    padding-left: $base__tab;
-
-    &:before {
-        display: block;
-        content: "//";
-        color: #999999;
-        margin-left: negative($base__tab);
-    }
-}
-
 .directory {
-    color: #999999;
 
     .directory {
         padding-left: rhythm(1);
@@ -44,9 +32,32 @@
     }
 }
 
-.candidate--web {
+.candidate--graphics {
 
     .directory {
+        margin: rhythm(1) 0;
+
+        > .directory > .directory {
+            margin: 0;
+        }
+    }
+}
+
+.candidate--web {
+
+    .directory-wrapper {
+        padding-left: $base__tab;
+
+        &:before {
+            display: block;
+            content: "//";
+            color: #999999;
+            margin-left: negative($base__tab);
+        }
+    }
+
+    .directory {
+        color: #999999;
         box-sizing: border-box;
 
         > .directory__item > .comment:before {

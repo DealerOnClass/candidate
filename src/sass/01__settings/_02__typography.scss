@@ -45,6 +45,24 @@ $mono: (
     )
 );
 
+$work: (
+    "WorkSans": (
+        (
+            "name": "WorkSans-Black",
+            "formats": ("woff2", "woff", "ttf"),
+            "weight": "900"
+        ), (
+            "name": "WorkSans-Bold",
+            "formats": ("woff2", "woff", "ttf"),
+            "weight": "700"
+        ), (
+            "name": "WorkSans-Regular",
+            "formats": ("woff2", "woff", "ttf"),
+            "weight": "500"
+        ),
+    )
+);
+
 $avenir: (
     "Avenir": (
         (

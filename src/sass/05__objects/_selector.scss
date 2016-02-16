@@ -23,10 +23,14 @@
     }
 }
 
+.selector--attribute__color {
+    color: #cccccc;
+}
+
 .selector--attribute {
     color: #99cc99;
     &:before {
-        color: #cccccc;;
+        color: #cccccc;
         content: "[";
     }
 }

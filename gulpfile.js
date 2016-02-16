@@ -30,7 +30,7 @@ gulp.task('sass', function() {
             browsers:  ['last 2 versions'],
             cascade:   false
         }))
-        .pipe(cssnano())
+        //  .pipe(cssnano())
         .pipe(gulp.dest('./src/css'))
         .pipe(reload({
             stream: true

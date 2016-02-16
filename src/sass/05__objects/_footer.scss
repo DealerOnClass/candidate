@@ -1,0 +1,18 @@
+.candidate--graphics,
+.candidate--web {
+
+    footer {
+
+        a {
+            color: inherit;
+        }
+    }
+}
+
+.candidate--web {
+
+    .footer {
+        margin-bottom: rhythm(6);
+    }
+}
+

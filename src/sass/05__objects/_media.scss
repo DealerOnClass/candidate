@@ -1,0 +1,36 @@
+.media {
+    display: table;
+    zoom: 1;
+
+    @include clearfix;
+}
+
+.media-object {
+    display: table-cell;
+}
+
+.media-body {
+    display: table-cell;
+
+    width: 10000px;
+
+    vertical-align: top;
+}
+
+.candidate--graphics {
+
+    .media {
+        margin-bottom: rhythm(2);
+
+        a {
+            text-decoration: none;
+            color: $dealeron__orange;
+            transition: color .35s ease-in-out;
+
+            &:hover,
+            &:focus {
+                color: $dealeron__grey;
+            }
+        }
+    }
+}

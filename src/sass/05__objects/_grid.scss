@@ -38,13 +38,74 @@ $grid__x: $base__x;
     }
 }
 
+.candidate--graphics {
+    .row {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+
+        @media (min-width: $desktop--min) {
+            flex-direction: row;
+        }
+    }
+
+    .col {
+        box-sizing: border-box;
+        padding: rhythm(3) rhythm(2);
+        position: relative;
+    }
+
+    .col--greetings {
+        z-index: 300;
+        padding-left: rhythm(3);
+
+        color: $white;
+        background-color: rgba(54, 98, 173, 0.9);
+
+        flex: 0 0 24em;
+
+        &:after {
+            position: absolute;
+            top: 0;
+            right: -6em;
+
+            width: 6em;
+            height: 100%;
+
+            content: '';
+
+            background-color: rgba(54, 98, 173, 0.9);
+            clip-path: polygon(0 0, 0% 100%, 100% 0);
+        }
+    }
+
+    .col--submission {
+        background-color: rgba(255, 255, 255, 0.85);
+
+        flex: 0 0 22em;
+    }
+
+    .col--main {
+        background-color: rgba(255, 255, 255, 0.85);
+        padding-left: rhythm(6);
+        flex: auto;
+        clip-path: polygon(4em 0, 100% 0, 100% 100%, 0 100%);
+
+        .wrapper {
+            max-width: 40em;
+            margin: 0 auto;
+        }
+    }
+}
+
 .candidate--web {
 
     .container {
         box-sizing: border-box;
+        max-width: 90em;
         margin: 0 auto;
         padding: 0 rhythm(1) 0 rhythm(1.5);
-        max-width: 90em;
 
         @media (max-width: $desktop--max) {
             max-width: 40em;
@@ -53,10 +114,9 @@ $grid__x: $base__x;
 
     .row {
         display: flex;
+        flex-direction: column;
 
         margin: 0 rhythm(negative(1));
-
-        flex-direction: column;
 
         @media (min-width: $desktop--min) {
             flex-direction: row;

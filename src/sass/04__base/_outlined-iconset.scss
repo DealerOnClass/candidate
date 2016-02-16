@@ -9,6 +9,10 @@ $icon__x:   half($base__x);
     padding-left: $icon__x;
 }
 
+.icon-clear {
+    display: block;
+}
+
 .icon-fw--left {
     padding-right: $icon__x;
 }
@@ -66,9 +70,9 @@ $icon__x:   half($base__x);
 // .icon-cloud-delete:before {
 //   content: "\e007";
 // }
-// .icon-cloud-download:before {
-//   content: "\e008";
-// }
+.icon-cloud-download:before {
+  content: "\e008";
+}
 // .icon-cloud-upload:before {
 //   content: "\e009";
 // }
@@ -114,9 +118,9 @@ $icon__x:   half($base__x);
 // .icon-dialogue-think:before {
 //   content: "\e017";
 // }
-// .icon-diamond:before {
-//   content: "\e018";
-// }
+.icon-diamond:before {
+  content: "\e018";
+}
 // .icon-dish-fork:before {
 //   content: "\e019";
 // }
@@ -138,9 +142,9 @@ $icon__x:   half($base__x);
 // .icon-fast-food:before {
 //   content: "\e01f";
 // }
-// .icon-flag:before {
-//   content: "\e020";
-// }
+.icon-flag:before {
+  content: "\e020";
+}
 // .icon-folder:before {
 //   content: "\e021";
 // }
@@ -423,9 +427,9 @@ $icon__x:   half($base__x);
 // .icon-waterfall:before {
 //   content: "\e07e";
 // }
-// .icon-website-1:before {
-//   content: "\e07f";
-// }
+.icon-website-1:before {
+  content: "\e07f";
+}
 // .icon-website-2:before {
 //   content: "\e080";
 // }
